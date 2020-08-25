@@ -59,7 +59,7 @@ flutter:
   fonts:
     - family: avenir
       fonts:
-        - asset: fonts/avenir.ttf
+        - asset: assets/fonts/avenir.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
@@ -68,5 +68,7 @@ flutter:
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #
+  assets:
+    - assets/images/doc.png
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

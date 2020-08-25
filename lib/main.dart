@@ -39,11 +39,77 @@ class _MyHomePageState extends State<MyHomePage> {
                   painter: PathPainter(),
                 ),
               ),
+              Container(
+                padding: EdgeInsets.all(50),
+                margin: EdgeInsets.only(top: 50),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      'Book a doctor in less than 2 minutes',
+                      style: TextStyle(
+                        fontSize: 28,
+                        fontWeight: FontWeight.w900,
+                      ),
+                    ),
+                    Text(
+                      'Finding a doctor has never been this easy',
+                      style: TextStyle(
+                        fontSize: 25,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              Positioned(
+                bottom: MediaQuery.of(context).size.height * 0.3,
+                child: Container(
+                  width: MediaQuery.of(context).size.width,
+                  child: Center(
+                    child: Image.asset('assets/images/doc.png'),
+                  ),
+                ),
+              ),
+              Positioned(
+                bottom: 0,
+                right: 0,
+                child: InkWell(
+                  child: Container(
+                    height: 80,
+                    width: 200,
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        stops: [0, 1],
+                        colors: [getStartedColorStart, getStartedColorEnd]
+                      ),
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(25),
+                      ),
+                    ),
+                    child: Center(
+                      child: Text(
+                        'Get Started',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.w800,
+                        ),
+                      ),
+                    ),
+                  ),
+                  onTap: OpenHomePage,
+                ),
+              ),
             ],
           )
         ],
       ),
     );
+  }
+
+  void OpenHomePage() {
+    Navigator.pushNamed(context, '/home_page');
   }
 }
 

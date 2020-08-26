@@ -1,3 +1,4 @@
+import 'package:bookly/HomePage.dart';
 import 'package:flutter/material.dart';
 import 'colorScheme.dart';
 
@@ -13,6 +14,9 @@ class MyApp extends StatelessWidget {
         fontFamily: 'avenir',
       ),
       home: MyHomePage(),
+      routes: {
+        '/home_page': (context) => HomePage()
+      },
     );
   }
 }

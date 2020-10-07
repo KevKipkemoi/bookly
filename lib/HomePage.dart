@@ -1,3 +1,4 @@
+import 'package:bookly/DocInfoPage.dart';
 import 'package:bookly/colorScheme.dart';
 import 'package:flutter/material.dart';
 
@@ -7,6 +8,9 @@ class HomePage extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: FirstPage(),
+      routes: {
+        "/DocInfoPage": (context) => DocInfoPage(),
+      },
       theme: ThemeData(
         fontFamily: 'avenir',
       ),
@@ -120,7 +124,7 @@ class _FirstPageState extends State<FirstPage> {
                               docWidget("doc3.png", "Lulu Faiz"),
                               docWidget("doc1.png", "Susan Cherono"),
                               docWidget("doc2.png", "Kamau Njoroge"),
-                              docWidget("doc3.png", "Deng Malek"),
+                              docWidget("doc2.png", "Deng Malek"),
                             ],
                           ),
                         ),

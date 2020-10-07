@@ -72,5 +72,6 @@ flutter:
     - assets/images/doc.png
     - assets/images/category/
     - assets/images/docProfile/
+    - assets/images/docInfo/bg.png
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
